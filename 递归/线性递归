@@ -5,3 +5,11 @@ def good_fibonacci(n):
     else:
         (a, b) = good_fibonacci(n - 1)
         return (a+b, a)
+
+#求列表的前 n 项和
+def good_fibonacci(n):
+    if n <= 1:
+        return (n, 0)
+    else:
+        (a, b) = good_fibonacci(n - 1)
+        return (a+b, a)
