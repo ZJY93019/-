@@ -19,3 +19,10 @@ def treverse(S, start, stop):
     if start < stop - 1:
         S[start], S[stop - 1] = S[stop - 1], S[start]
         treverse(S, start + 1, stop - 1)
+
+#简单的递归计算幂函数
+def tpower(x, n):
+    if n == 0:
+        return 1
+    else:
+        return x * tpower(x, n - 1)
