@@ -32,6 +32,11 @@ def reverse_file(filename):
     for line in original:
         S.push(line.rstrip('\n'))
     original.close()
+    
+        output = open(filename, 'w')
+    while not S.is_empty():
+        output.write(S.pop() + '\n')
+    output.close()
 
 if __name__ == "__main__":
     x = ArrayStack()
