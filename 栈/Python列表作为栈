@@ -25,6 +25,13 @@ class ArrayStack:
 
     def __str__(self):
         return str(self._data)
+#利用栈进行逆序输出
+def reverse_file(filename):
+    S = ArrayStack()
+    original = open(filename)
+    for line in original:
+        S.push(line.rstrip('\n'))
+    original.close()
 
 if __name__ == "__main__":
     x = ArrayStack()
