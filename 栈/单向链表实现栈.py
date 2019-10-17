@@ -25,7 +25,7 @@ class LinkedStack:
         if self.is_empty():
             raise Empty('Stack is empty.')
         answer = self._head._element
-        self._head = self._head._next
+        self._head = self._head._next       #链表指向下一个内容，间接删除头部元素
         self._size -= 1
         return answer
         
